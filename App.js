@@ -19,7 +19,7 @@ export default function App() {
 
         if(route.id === 'b') {
           return(
-            <SceneClients />
+            <SceneClients navigator={navigator} />
           );
         } 
       }}

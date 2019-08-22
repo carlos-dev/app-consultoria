@@ -14,7 +14,7 @@ export default class SceneClients extends Component {
                 <StatusBar 
                     hidden={true}
                 />
-                <NavigationBar voltar />
+                <NavigationBar voltar  navigator={this.props.navigator} />
                 
                 <View style={styles.clientsHeader}>
                     <Image source={detalhesClientes} />
