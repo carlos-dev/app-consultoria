@@ -45,8 +45,21 @@ export default class NaigationBar extends Component {
                     </View>
 
                     <View style={styles.menuGroup}>
-                        <Image source={menu_empresa} style={styles.imgMenu} />
-                        <Image source={menu_servico} style={styles.imgMenu}  />
+                        <TouchableHighlight 
+                            onPress={() => {
+                                this.props.navigator.push({id: 'empresa'})
+                            }}
+                        >
+                            <Image source={menu_empresa} style={styles.imgMenu} />
+                        </TouchableHighlight>
+                        
+                        <TouchableHighlight 
+                            onPress={() => {
+                                this.props.navigator.push({id: 'servicos'})
+                            }}
+                        >
+                            <Image source={menu_servico} style={styles.imgMenu}  />
+                        </TouchableHighlight>
                     </View>
 
                 </View>
