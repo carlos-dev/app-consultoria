@@ -10,7 +10,7 @@ const cliente2 = require('../img/cliente2.png');
 export default class SceneClients extends Component {
     render() {
         return (
-            <View>
+            <View style={{flex: 1, backgroundColor: '#fff'}} >
                 <StatusBar 
                     hidden={true}
                 />

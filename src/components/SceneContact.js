@@ -8,7 +8,7 @@ const detalhesContato = require('../img/detalhe_contato.png');
 export default class SceneContact extends Component {
     render() {
         return (
-            <View>
+            <View style={{flex: 1, backgroundColor: '#fff'}}>
                 <StatusBar 
                     hidden={true}
                 />

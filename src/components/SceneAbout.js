@@ -8,7 +8,7 @@ const detalhesEmpresa = require('../img/detalhe_empresa.png');
 export default class SceneAbout extends Component {
     render() {
         return (
-            <View>
+            <View style={{flex: 1, backgroundColor: '#fff'}}>
                 <StatusBar 
                     hidden={true}
                 />
