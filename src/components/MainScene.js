@@ -28,12 +28,20 @@ export default class NaigationBar extends Component {
                     <View style={styles.menuGroup}>
                         <TouchableHighlight 
                             onPress={() => {
-                                this.props.navigator.push({id: 'b'})
+                                this.props.navigator.push({id: 'cliente'})
                             }}
                         >
                             <Image source={menu_cliente} style={styles.imgMenu} />
                         </TouchableHighlight>
-                        <Image source={menu_contato} style={styles.imgMenu} />
+
+                        <TouchableHighlight 
+                            onPress={() => {
+                                this.props.navigator.push({id: 'contato'})
+                            }}
+                        >
+                            <Image source={menu_contato} style={styles.imgMenu} />
+
+                        </TouchableHighlight>
                     </View>
 
                     <View style={styles.menuGroup}>

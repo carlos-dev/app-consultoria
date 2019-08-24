@@ -5,21 +5,28 @@ import NaigationBar from './src/components/NavigationBar';
 
 import MainScene from './src/components/MainScene';
 import SceneClients from './src/components/SceneClients';
+import SceneContact from './src/components/SceneContact';
 
 export default function App() {
   return (
     <Navigator 
-      initialRoute={{id: 'a'}}
+      initialRoute={{id: 'principal'}}
       renderScene={(route, navigator) => {
-        if(route.id === 'a') {
+        if(route.id === 'principal') {
           return(
             <MainScene navigator={navigator} />
           );
         } 
 
-        if(route.id === 'b') {
+        if(route.id === 'cliente') {
           return(
             <SceneClients navigator={navigator} />
+          );
+        } 
+
+        if(route.id === 'contato') {
+          return(
+            <SceneContact navigator={navigator} />
           );
         } 
       }}
