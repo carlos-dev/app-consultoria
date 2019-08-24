@@ -27,6 +27,8 @@ export default class NaigationBar extends Component {
 
                     <View style={styles.menuGroup}>
                         <TouchableHighlight 
+                            underlayColor={'#b9c941'}
+                            activeOpacity={0.3}
                             onPress={() => {
                                 this.props.navigator.push({id: 'cliente'})
                             }}
@@ -35,6 +37,8 @@ export default class NaigationBar extends Component {
                         </TouchableHighlight>
 
                         <TouchableHighlight 
+                            underlayColor={'#61db8c'}
+                            activeOpacity={0.3}
                             onPress={() => {
                                 this.props.navigator.push({id: 'contato'})
                             }}
@@ -46,6 +50,8 @@ export default class NaigationBar extends Component {
 
                     <View style={styles.menuGroup}>
                         <TouchableHighlight 
+                            underlayColor={'#ec7148'}
+                            activeOpacity={0.3}
                             onPress={() => {
                                 this.props.navigator.push({id: 'empresa'})
                             }}
@@ -54,6 +60,8 @@ export default class NaigationBar extends Component {
                         </TouchableHighlight>
                         
                         <TouchableHighlight 
+                            underlayColor={'#19d1c8'}
+                            activeOpacity={0.3}
                             onPress={() => {
                                 this.props.navigator.push({id: 'servicos'})
                             }}

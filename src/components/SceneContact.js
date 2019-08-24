@@ -12,7 +12,7 @@ export default class SceneContact extends Component {
                 <StatusBar 
                     hidden={true}
                 />
-                <NavigationBar voltar  navigator={this.props.navigator} />
+                <NavigationBar voltar  navigator={this.props.navigator}  colorTheme='#61bd8c' />
                 
                 <View style={styles.clientsHeader}>
                     <Image source={detalhesContato} />

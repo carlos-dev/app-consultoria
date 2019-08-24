@@ -12,7 +12,7 @@ export default class SceneAbout extends Component {
                 <StatusBar 
                     hidden={true}
                 />
-                <NavigationBar voltar  navigator={this.props.navigator} />
+                <NavigationBar voltar  navigator={this.props.navigator} colorTheme="#19d1c8" />
                 
                 <View style={styles.clientsHeader}>
                     <Image source={detalhesServicos} />

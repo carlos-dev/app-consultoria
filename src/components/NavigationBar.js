@@ -7,7 +7,7 @@ export default class NaigationBar extends Component {
     render() {
         if(this.props.voltar) {
             return ( 
-                <View style={styles.titleBar}>
+                <View style={[styles.titleBar, {backgroundColor: this.props.colorTheme}]}>
                     <TouchableHighlight
                         onPress={() => {
                             this.props.navigator.pop();

@@ -12,9 +12,9 @@ export default class SceneClients extends Component {
         return (
             <View style={{flex: 1, backgroundColor: '#fff'}} >
                 <StatusBar 
-                    hidden={true}
+                    backgroundColor='#b9c961'
                 />
-                <NavigationBar voltar  navigator={this.props.navigator} />
+                <NavigationBar voltar  navigator={this.props.navigator} colorTheme='#b9c961' />
                 
                 <View style={styles.clientsHeader}>
                     <Image source={detalhesClientes} />
